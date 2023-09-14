@@ -4,6 +4,10 @@ import React, { useEffect, useState } from 'react';
 import "./Home.css";
 import { FaBookOpen, FaDollarSign } from 'react-icons/fa';
 import Course from '../Course/Course';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 
 const Home = () => {
@@ -26,7 +30,11 @@ const Home = () => {
         let totalCreditHour = newCourse.credit_hours;
         let totalPrice = newCourse.price;
         if (alreadyAdded) {
-            return alert('Already Added');
+           return toast.error('Already Added',{
+            position:"top-center"
+           });
+
+
         } else {
             selectedCourse.forEach((courseMoreInfo) => {
                 totalPrice += courseMoreInfo.price
@@ -35,7 +43,11 @@ const Home = () => {
             });
             const remainingCreditHour = 20 - totalCreditHour;
             if (totalCreditHour > 20 || remainingCreditHour < 0) {
-                return alert('Sorry Credit Hours Limit meets here');
+                return toast.error('Sorry Credit Hours Limit meets here',{
+                    position:"top-center"
+                });
+
+
             } else {
                 setRemainingCreditHour(remainingCreditHour);
                 setTotalCreditHour(totalCreditHour);
@@ -51,17 +63,17 @@ const Home = () => {
         <div className='main-container'>
             <div className='lg:flex'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center p-12'>
-                    
+
                     {
                         courses.map((course) => (<div className="card max-w-sm bg-base-100 shadow-xl">
                             <div className="course-img">
                                 <img className='w-full' src={course.course_cover_img} alt="" />
                             </div>
                             <div className='card-body'>
-                            <h2 className='course-title'>{course.course_title}</h2>
-                            <p>
-                                <small className='font-light text-sm'>{course.course_details}</small>
-                            </p>
+                                <h2 className='course-title'>{course.course_title}</h2>
+                                <p>
+                                    <small className='font-light text-sm'>{course.course_details}</small>
+                                </p>
                             </div>
                             <div className="more-info ">
                                 <div>
@@ -87,6 +99,7 @@ const Home = () => {
                     ></Course>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
