@@ -3,19 +3,17 @@
     justify-content: center;
     align-items: center;
 }
-.home-container{
+/* .home-container{
     display: flex;
-    gap: 40px;
+    gap: 8px;
     
-}
-.course {
+} */
+/* .course {
     width: 250px;
     max-height: 500px;
-    /* border: 2px solid red; */
-}
+
+} */
 .course-title{
-    margin-top: 6px;
-    margin-bottom: 6px;
     font-weight: bold;
 }
 
@@ -23,13 +21,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 6px;
+    
 }
 
-.course-btn {
-    padding: 12px;
-    /* background-color: [#2F80ED]; */
-    width: 250px;
-    border-radius: 10px;
-    margin-top: 6px;
-}

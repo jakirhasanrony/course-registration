@@ -7,12 +7,12 @@ import React from 'react';
 const Course = (props) => {
     const { selectedCourse, remainingCreditHour, totalCreditHour, totalPrice} = props;
     return (
-        <div>
-            <div className='mb-4'>
+        <div className='card bg-base-100 shadow-xl pl-6 m-4'>
+            <div className='my-4'>
                 <h1 className='font-bold text-[#2F80ED]'>Credit Hour Remaining : {remainingCreditHour}</h1>
             </div>
             <hr />
-            <div>
+            <div className='my-4'>
                 <h1 className='font-bold my-4'>Course Name</h1>
                 {
                     selectedCourse.map((courseName) => (

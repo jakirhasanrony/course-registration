@@ -3,7 +3,7 @@
       "course_id": "C101",
       "course_cover_img": "https://i.ibb.co/vzbWgkL/Rectangle-2-2.png",
       "course_title": "Introduction to C Programming",
-      "course_details": "This course provides a foundational understanding of the C programming language. Participants will learn the fundamentals of coding in C, including variables, data types, control structures, and functions. This course also covers key concepts like memory management, file handling, and basic debugging techniques.",
+      "course_details": "This course provides a foundational understanding of the C programming language. Participants will learn the fundamentals of coding in C, including variables, data types, control structures, and functions. This course also covers key ..",
       "price":15000,
       "credit_hours": 1
     },
@@ -11,7 +11,7 @@
       "course_id": "C102",
       "course_cover_img": "https://i.ibb.co/J5Xqh8Y/Rectangle-2-3.png",
       "course_title": "Introduction to Algorithms",
-      "course_details": "This course offers a comprehensive overview of algorithm design and analysis. Participants will delve into the world of problem-solving through algorithms, covering topics such as algorithmic paradigms, data structures, sorting and searching algorithms, and algorithm efficiency analysis.",
+      "course_details": "This course offers a comprehensive overview of algorithm design and analysis. Participants will delve into the world of problem-solving through algorithms, covering topics such as algorithmic paradigms, data structures, sorting and ...",
       "price": 25000,
       "credit_hours": 2
     },
@@ -19,7 +19,7 @@
       "course_id": "C103",
       "course_cover_img": "https://i.ibb.co/sj5t5jT/Rectangle-2-4.png",
       "course_title": "Introduction to C++ for DSA",
-      "course_details": "This course is designed to bridge the gap between programming and algorithmic problem-solving using the C++ programming language. Students will learn the fundamentals of C++, including object-oriented programming concepts, and then apply them to implement and analyze various data structures and algorithms.",
+      "course_details": "This course is designed to bridge the gap between programming and algorithmic problem-solving using the C++ programming language. Students will learn the fundamentals of C++, including object-oriented programming concepts,.",
       "price": 10000,
       "credit_hours": 10
     },
@@ -27,7 +27,7 @@
       "course_id": "C104",
       "course_cover_img": "https://i.ibb.co/LYrH6Td/Rectangle-3.png",
       "course_title": "Basic Data Structures",
-      "course_details": "This course introduces students to fundamental data structures used in computer science and programming. It covers essential concepts like arrays, linked lists, stacks, and queues. Participants learn how to create, manipulate, and optimize these data structures, enabling them to efficiently store and retrieve data in various applications.",
+      "course_details": "This course introduces students to fundamental data structures used in computer science and programming. It covers essential concepts like arrays, linked lists, stacks, and queues. Participants learn how to create, manipulate..",
       "price": 35000,
       "credit_hours": 5
     },
@@ -35,7 +35,7 @@
       "course_id": "C105",
       "course_cover_img": "https://i.ibb.co/S5PqcpX/Rectangle-2.png",
       "course_title": "Introduction to OOP Python",
-      "course_details": "This course provides a foundational understanding of OOP principles and their implementation in the Python programming language. Participants will learn how to create and work with classes, objects, inheritance, polymorphism, and encapsulation. ",
+      "course_details": "This course provides a foundational understanding of OOP principles and their implementation in the Python programming language. Participants will learn how to create and work with classes, objects, inheritance, polymorphism.. ",
       "price": 19000,
       "credit_hours": 5
     },
@@ -43,7 +43,7 @@
       "course_id": "C106",
       "course_cover_img": "https://i.ibb.co/yyn294W/Rectangle-2-5.png",
       "course_title": "Software Engineering",
-      "course_details": "This course is a comprehensive study of the principles, practices, and methodologies involved in the development and maintenance of software systems. Participants learn to design, code, test, and manage software projects effectively, ensuring they meet quality, reliability, and scalability standards.",
+      "course_details": "This course is a comprehensive study of the principles, practices, and methodologies involved in the development and maintenance of software systems. Participants learn to design, code, test, and manage software projects ..",
       "price": 23000,
       "credit_hours": 2
     },
@@ -51,7 +51,7 @@
       "course_id": "C107",
       "course_cover_img": "https://i.ibb.co/ckLSP20/Rectangle-3-1.png",
       "course_title": "AWS, Cloud Computing",
-      "course_details": "This course explores Amazon Web Services (AWS), one of the leading cloud computing platforms. Participants learn to harness the power of AWS to deploy, manage, and scale applications and infrastructure in the cloud. This course covers a wide range of AWS services, including compute, storage, databases, networking, and security. ",
+      "course_details": "This course explores Amazon Web Services (AWS), one of the leading cloud computing platforms. Participants learn to harness the power of AWS to deploy, manage, and scale applications and infrastructure in the cloud. ",
       "price": 35000,
       "credit_hours": 5
     },
@@ -59,7 +59,7 @@
       "course_id": "C108",
       "course_cover_img": "https://i.ibb.co/PQ8fGZR/Rectangle-2-1.png",
       "course_title": "Database (MySQL)",
-      "course_details": "This course offers a comprehensive exploration of MySQL, a popular open-source relational database management system (RDBMS). Participants will learn the fundamentals of database design, SQL (Structured Query Language), and how to work with MySQL to store, retrieve.....",
+      "course_details": "This course offers a comprehensive exploration of MySQL, a popular open-source relational database management system (RDBMS). Participants will learn the fundamentals of database design, ....",
       "price": 19000,
       "credit_hours": 5
     },
@@ -67,7 +67,7 @@
       "course_id": "C109",
       "course_cover_img": "https://i.ibb.co/yFyQtLq/Rectangle-2-6.png",
       "course_title": "Problem-Solving Part",
-      "course_details": "This course focuses on developing essential skills and strategies for effectively tackling complex problems across various domains. Participants learn systematic approaches to identify, analyze, and solve problems, emphasizing critical thinking and creativity.",
+      "course_details": "This course focuses on developing essential skills and strategies for effectively tackling complex problems across various domains. Participants learn systematic approaches to identify, analyze, and solve problems..",
       "price": 23000,
       "credit_hours": 2
     }

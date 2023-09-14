@@ -31,14 +31,15 @@ const Home = () => {
             selectedCourse.forEach((courseMoreInfo) => {
                 totalPrice += courseMoreInfo.price
                 totalCreditHour += courseMoreInfo.credit_hours;
-                
+
             });
             const remainingCreditHour = 20 - totalCreditHour;
-            if (totalCreditHour > 20 || remainingCreditHour < 0 ) {
+            if (totalCreditHour > 20 || remainingCreditHour < 0) {
                 return alert('Sorry Credit Hours Limit meets here');
             } else {
                 setRemainingCreditHour(remainingCreditHour);
                 setTotalCreditHour(totalCreditHour);
+
                 setTotalPrice(totalPrice);
                 setSelectedCourse([...selectedCourse, newCourse]);
             }
@@ -48,18 +49,21 @@ const Home = () => {
 
     return (
         <div className='main-container'>
-            <div className='home-container'>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+            <div className='lg:flex'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center p-12'>
+                    
                     {
-                        courses.map((course) => (<div className="course">
+                        courses.map((course) => (<div className="card max-w-sm bg-base-100 shadow-xl">
                             <div className="course-img">
-                                <img src={course.course_cover_img} alt="" />
+                                <img className='w-full' src={course.course_cover_img} alt="" />
                             </div>
+                            <div className='card-body'>
                             <h2 className='course-title'>{course.course_title}</h2>
                             <p>
-                                <small>{course.course_details}</small>
+                                <small className='font-light text-sm'>{course.course_details}</small>
                             </p>
-                            <div className="more-info">
+                            </div>
+                            <div className="more-info ">
                                 <div>
                                     <FaDollarSign></FaDollarSign>
                                 </div>
@@ -70,7 +74,7 @@ const Home = () => {
 
                                 <p>Credit: <span>{course.credit_hours}</span>hr</p>
                             </div>
-                            <button onClick={() => handleSelectBtn(course)} className='course-btn bg-[#2F80ED] text-white'>Select</button>
+                            <button onClick={() => handleSelectBtn(course)} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg  bg-[#2F80ED] text-white my-4">Select</button>
 
                         </div>))
                     }
