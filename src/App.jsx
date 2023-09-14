@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 // eslint-disable-next-line no-unused-vars
 import viteLogo from '/vite.svg'
 import './App.css'
+import Home from './components/Home/Home'
 
 function App() {
   // eslint-disable-next-line no-unused-vars
@@ -11,7 +12,8 @@ function App() {
 
   return (
     <>
-      <h1 className='text-6xl'>Course Registration</h1>
+      <h1 className='text-2xl	font-bold	text-center mx-auto my-12'>Course Registration</h1>
+      <Home></Home>
     </>
   )
 }
