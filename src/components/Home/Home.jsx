@@ -10,6 +10,9 @@ const Home = () => {
 
     const [selectedCourse, setSelectedCourse] = useState([]);
     const [courses, setCourses] = useState([]);
+    const [totalCreditHour, setTotalCreditHour] = useState(0);
+    const [remainingCreditHour, setRemainingCreditHour] = useState(20);
+    const [totalPrice, setTotalPrice] = useState(0);
 
     useEffect(() => {
         fetch("./allCourse.json")
@@ -20,12 +23,22 @@ const Home = () => {
 
     const handleSelectBtn = (newCourse) => {
         const alreadyAdded = selectedCourse.find(triggeredCourse => triggeredCourse.course_id == newCourse.course_id);
-        if(alreadyAdded){
+        let totalCreditHour = newCourse.credit_hours;
+        let totalPrice = newCourse.price;
+        if (alreadyAdded) {
             return alert('Already Added');
-        }else{
+        } else {
+            selectedCourse.forEach((courseInfo) => {
+                totalCreditHour += courseInfo.credit_hours;
+                totalPrice += courseInfo.price
+            });
+            const remainingCreditHour = 20 - totalCreditHour;
+            setTotalCreditHour(totalCreditHour);
+            setRemainingCreditHour(remainingCreditHour);
+            setTotalPrice(totalPrice);
             setSelectedCourse([...selectedCourse, newCourse]);
         }
-        
+
     };
 
     return (
@@ -52,13 +65,17 @@ const Home = () => {
 
                                 <p>Credit: <span>{course.credit_hours}</span>hr</p>
                             </div>
-                            <button onClick={()=>handleSelectBtn(course)} className='course-btn'>Select</button>
+                            <button onClick={() => handleSelectBtn(course)} className='course-btn bg-[#2F80ED] text-white'>Select</button>
 
                         </div>))
                     }
                 </div>
                 <div>
-                   <Course selectedCourse={selectedCourse}></Course>
+                    <Course selectedCourse={selectedCourse}
+                    totalCreditHour={totalCreditHour}
+                    remainingCreditHour={remainingCreditHour}
+                    totalPrice={totalPrice}
+                    ></Course>
                 </div>
             </div>
         </div>

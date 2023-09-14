@@ -5,18 +5,29 @@
 import React from 'react';
 
 const Course = (props) => {
-    console.log(props.selectedCourse);
+    const { selectedCourse, remainingCreditHour, totalCreditHour, totalPrice} = props;
     return (
         <div>
-            <h1 className='font-bold'>Course Name</h1>
-            {
-                props.selectedCourse.map((courseName)=>(
-                   <li key={courseName.course_id}>{courseName.course_title}</li> 
-                ))
-            }
+            <div className='mb-4'>
+                <h1 className='font-bold text-[#2F80ED]'>Credit Hour Remaining : {remainingCreditHour}</h1>
+            </div>
             <hr />
             <div>
+                <h1 className='font-bold my-4'>Course Name</h1>
+                {
+                    selectedCourse.map((courseName) => (
+                        <li key={courseName.course_id}>{courseName.course_title}</li>
+                    ))
 
+                }
+            </div>
+            <hr />
+            <div className='my-4'>
+                <h1 className='font-medium'>Total Credit Hours : {totalCreditHour}</h1>
+            </div>
+            <hr />
+            <div className='my-4'>
+                <h1 className='font-semibold'>Total Price : {totalPrice}</h1>
             </div>
         </div>
     );
