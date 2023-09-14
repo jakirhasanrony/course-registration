@@ -28,16 +28,17 @@ const Home = () => {
         if (alreadyAdded) {
             return alert('Already Added');
         } else {
-            selectedCourse.forEach((courseInfo) => {
-                totalCreditHour += courseInfo.credit_hours;
-                totalPrice += courseInfo.price
+            selectedCourse.forEach((courseMoreInfo) => {
+                totalPrice += courseMoreInfo.price
+                totalCreditHour += courseMoreInfo.credit_hours;
+                
             });
             const remainingCreditHour = 20 - totalCreditHour;
-            if (remainingCreditHour < 0 || totalCreditHour > 20) {
+            if (totalCreditHour > 20 || remainingCreditHour < 0 ) {
                 return alert('Sorry Credit Hours Limit meets here');
             } else {
-                setTotalCreditHour(totalCreditHour);
                 setRemainingCreditHour(remainingCreditHour);
+                setTotalCreditHour(totalCreditHour);
                 setTotalPrice(totalPrice);
                 setSelectedCourse([...selectedCourse, newCourse]);
             }

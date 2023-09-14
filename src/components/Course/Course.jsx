@@ -27,7 +27,7 @@ const Course = (props) => {
             </div>
             <hr />
             <div className='my-4'>
-                <h1 className='font-semibold'>Total Price : {totalPrice}</h1>
+                <h1 className='font-semibold'>Total Price : {totalPrice} USD</h1>
             </div>
         </div>
     );
