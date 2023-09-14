@@ -33,10 +33,14 @@ const Home = () => {
                 totalPrice += courseInfo.price
             });
             const remainingCreditHour = 20 - totalCreditHour;
-            setTotalCreditHour(totalCreditHour);
-            setRemainingCreditHour(remainingCreditHour);
-            setTotalPrice(totalPrice);
-            setSelectedCourse([...selectedCourse, newCourse]);
+            if (remainingCreditHour < 0 || totalCreditHour > 20) {
+                return alert('Sorry Credit Hours Limit meets here');
+            } else {
+                setTotalCreditHour(totalCreditHour);
+                setRemainingCreditHour(remainingCreditHour);
+                setTotalPrice(totalPrice);
+                setSelectedCourse([...selectedCourse, newCourse]);
+            }
         }
 
     };
@@ -72,9 +76,9 @@ const Home = () => {
                 </div>
                 <div>
                     <Course selectedCourse={selectedCourse}
-                    totalCreditHour={totalCreditHour}
-                    remainingCreditHour={remainingCreditHour}
-                    totalPrice={totalPrice}
+                        totalCreditHour={totalCreditHour}
+                        remainingCreditHour={remainingCreditHour}
+                        totalPrice={totalPrice}
                     ></Course>
                 </div>
             </div>
