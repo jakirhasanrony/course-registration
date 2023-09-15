@@ -3,7 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import "./Home.css";
 import { FaBookOpen, FaDollarSign } from 'react-icons/fa';
-import Course from '../Course/Course';
+// import Course from '../Course/Course';
+import Course from '../Courses/Course';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
