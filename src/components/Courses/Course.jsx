@@ -16,7 +16,7 @@ const Course = (props) => {
                 <h1 className='font-bold my-4'>Course Name</h1>
                 {
                     selectedCourse.map((courseName) => (
-                        <li key={courseName.course_id}>{courseName.course_title}</li>
+                        <li className='list-decimal list-inside' key={courseName.course_id}>{courseName.course_title}</li>
                     ))
 
                 }
