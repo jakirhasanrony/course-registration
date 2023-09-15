@@ -1,4 +1,6 @@
+<<<<<<< HEAD
 <!-- # React + Vite
+=======
 # Three Features of "Course Registration" Project 
 + **Course Selection:** Here, whenever users access the application, they will see a list of available courses. There are total 9 available courses, each course is represented as a card with relevant information : course title, course details, price, credit ours etc. After seeing all these, users can select the ones they are interested in by clicking the "Select" button.
 + **Credit Hour Tracking and Price Calculation:** In this application, this feature dynamically calculates and displays the total credit hour and total cost of the selected courses. This works in tandem to provide users with essential information about their selected courses to ensure that they are staying within predefined limits. Here's the limitation: users can't be able to add more than 20 credit hours. 
@@ -6,11 +8,6 @@
 
 ***
 
-
-<<<<<<< HEAD
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh -->
-=======
 # State Management in "Course Registration" Project
 Here, in this project, State management is handled using React's useState and useEffect hooks. Here the details discussion is give below:
 + **Fetching Data:** In this project, in the **"Home"** component  the useEffect hook is used to fetch data from allCourse named JSON file and then the fetched data is stored in the **"courses"** state variable. 
@@ -21,4 +18,3 @@ In conclusion, the **"Home"** component effectively manages state in a React app
 
 
 ***
->>>>>>> a5c02a06d0b6328b3f9c6a218b1198c0bfe6a24d
