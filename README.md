@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<!-- # React + Vite
-=======
 # Three Features of "Course Registration" Project 
 + **Course Selection:** Here, whenever users access the application, they will see a list of available courses. There are total 9 available courses, each course is represented as a card with relevant information : course title, course details, price, credit ours etc. After seeing all these, users can select the ones they are interested in by clicking the "Select" button.
 + **Credit Hour Tracking and Price Calculation:** In this application, this feature dynamically calculates and displays the total credit hour and total cost of the selected courses. This works in tandem to provide users with essential information about their selected courses to ensure that they are staying within predefined limits. Here's the limitation: users can't be able to add more than 20 credit hours. 
@@ -15,6 +12,3 @@ Here, in this project, State management is handled using React's useState and us
 + **Updating State:** Here the **"handleSelectBtn"** function is called when a user clicks a button to select a course. It checks if the course is already selected and updates state variables accordingly, including **"selectedCourse"**, **"totalCreditHour"**, **"remainingCreditHour"**, and **"totalPrice"**.
 + **Rendering Components:** As we know, state variables are used to render components and display dynamic data within the JSX. In this application the "Course" component is rendered with data passed as props, allowing the user to see their selected courses and related information.
 In conclusion, the **"Home"** component effectively manages state in a React application using the **"useState"** and **"useEffect"** hooks. It initializes and updates state variables to store and display dynamic data, such as selected courses, total credit hours, remaining credit hours, and total prices. This state management pattern is crucial for creating responsive and interactive user interfaces in React.
-
-
-***
